@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>App Name: A Coding Project By Eric Phillips</title>
+    <title>FIZZ BUZZ: A Coding Project By Eric Phillips</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -27,7 +27,7 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand logoFont" href="index.html"><img src="img/wht-android-chrome-192x192.png" class="d-inline-block align-bottom" 
-                alt="mark" width="30" height="30"> APP NAME</a>
+                alt="mark" width="30" height="30"> FIZZ BUZZ</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -56,7 +56,38 @@
     <!-- MAIN SECTION -->
     <main class="flex-shrink-0">
         <div class="container mt-5">
-
+            <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col col-lg-4 border-end border-2">
+                    <h1 class="display-6 fw-bold lh-1 mb-3">FIZZBUZZ: A Coding Project</h1>
+                    <h4 class="lead">
+                        Don't "Buzz" when you need to "Fizz." Thankfully, this program can help with that! 
+                        Introducing FIZZBUZZ, A javascript coding exercise utilizing loops. 
+                    </h4>
+                    <h2 class="display-7 fw-bold lh-1 mt-5 border-bottom border-2">Instructions</h2>
+                    <p>
+                        Write a program that displays each number from 1 to 100. For each multiple of 3, display "Fizz" 
+                        instead of the number. For each multiple of 5, display "Buzz" instead of the number. 
+                        For numbers which are multipels of both 3 and 5, display "FizzBuzz" instead of the number. 
+                    </p>
+                </div>
+                <div class="col col-lg-8">
+                    <form class="row gx-3 gy-2">
+                        <div class="col">
+                            Enter a FIZZ number:
+                            <input id="fizzNum" type="number" class="form-control" placeholder="make it fizzy" 
+                            value=3 aria-label="Fizz Number">
+                        </div>
+                        <div class="col">
+                            Enter a BUZZ number:
+                            <input id="fizzNum" type="number" class="form-control" placeholder="make it buzzy" 
+                            value=5 aria-label="Buzz Number">
+                        </div>
+                        <div class="col-12 d-flex justify-content-end py-1">
+                            <button id="btnSubmit" type="button" class="btn btn-warning tn-lg mx-5">START</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </main>
     <!-- FOOTER SECTION -->
