@@ -9,7 +9,7 @@ function getValues(){
 
     if(Number.isInteger(fizzNum) && Number.isInteger(buzzNum)){
         // call fizzBuzz
-        let fbArray = fizzBuzz(fizzNum,buzzNum);
+        let fbArray = fizzBuzzC(fizzNum,buzzNum);
 
         // call displayNumbers()
         displayNumbers(fbArray);
@@ -33,6 +33,51 @@ function fizzBuzz(fizzVal, buzzVal){
         } else {
             returnArray.push(i);
         }
+    }
+    return returnArray;
+}
+
+//switch case statement
+function fizzBuzzB(fizzVal, buzzVal){
+    let returnArray = [];
+    let Fizz = false;
+    let Buzz = false;
+
+    for(let i = 1; i<=100; i++){
+        Fizz = i % fizzVal == 0;
+        Buzz = i % buzzVal == 0;
+        
+        switch(true)
+        {
+            case Fizz && Buzz:{
+                returnArray.push('FizzBuzz');
+                break;
+            } 
+            case Fizz: {
+                returnArray.push('Fizz');
+                break;
+            }
+            case Buzz:{
+                returnArray.push('Buzz');
+                break;
+            }
+            default:{
+                returnArray.push(i);
+                break;
+            }
+        }
+    }
+    return returnArray;
+}
+
+// ternary operator
+// an empty string is a "false-like" value in javascript. 
+function fizzBuzzC(fizzVal, buzzVal){
+    let returnArray = [];
+
+    for(let i = 1; i <= 100; i++){
+        let value = ((i % fizzVal == 0 ? 'Fizz' : '') + (i % buzzVal == 0 ? 'Buzz' : '')  ||  i);
+        returnArray.push(value);
     }
     return returnArray;
 }
