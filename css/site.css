@@ -1,12 +1,12 @@
 :root {
-    --primary-color: #1d5888;
+    --primary-color: #b2292c;
     --secondary-color: #ff993b;
     --dark-color: #292929;
     --white-color: #e7e7e7;
 }
 
 .logoFont {
-    font-family: 'Black Ops One', cursive; /* from Google fonts */
+    font-family: 'Fredericka the Great', cursive; /* from Google fonts */
 }
 
 body {
@@ -14,11 +14,11 @@ body {
 }
 
 nav {
-    background-color: var(--dark-color);
+    background-color: var(--primary-color);
 }
 
 footer {
-    background-color: var(--dark-color);
+    background-color: var(--primary-color);
     padding-right: 1rem
 }
 
@@ -34,6 +34,21 @@ footer .social>a:hover {
 
 .checklist > li i {
     color: var(--secondary-color)
+}
+
+table {
+    table-layout: fixed;
+}
+
+.Fizz {
+    color: darkgreen;
+}
+.Buzz {
+    color: darkred;
+}
+.FizzBuzz {
+    color: var(--secondary-color);
+    font-weight: bold;
 }
 
 code[class*="language-"],
@@ -60,7 +75,7 @@ pre[class*="language-"] {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    color: var(--primary-color);
+    color: var(--dark-color);
 }
 
 main>.container {
